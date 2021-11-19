@@ -1,0 +1,216 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:200px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    background: black;
+    z-index: -1;
+    opacity: 1.2;
+}
+#logo img{
+    height: 200px;
+}
+#navbar::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+}
+#navbar ul{
+     display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.9rem;
+} 
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: aquablue;
+    background-color: rgb(0, 217, 255);
+}
+.search-form{
+    display:flex;
+    position: relative;
+    background-color: whitesmoke;
+    margin-left: 38rem;
+    height: 33px;
+    width: 160px;
+    align-items: right;
+    padding-right: 5px;
+    
+}
+.search-form input{
+    height:100%;
+    width:100%;
+    font-size: 1.3rem;
+    font-display:var(--navbar-height);
+}
+.icons div{
+    display: flex;
+    display:inline-block;
+    background-color: rgb(236, 246, 250);
+    cursor: pointer;
+    font-size: 2.3rem;
+    margin: 1.5rem;
+    width: 48px;
+    align-items: center;
+}
+.fa-shopping-cart:hover{
+    color: orchid
+}
+/*home section*/
+#Home{
+    display: flex;
+    flex-direction: column ;
+    padding:3px 200px;
+    height: 930px;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{
+    content:"";
+    position:absolute;
+    background: url('../shop2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.8;
+}
+#Home h1{
+    font-size: 5rem;
+    color: rgba(5, 14, 19, 0.76);
+    text-align:center;
+}
+#Home p{
+    font-display: block;
+    font-size: 4.5rem ;
+    color: rgba(15, 10, 8, 0.89);
+    text-align: center;
+    text-decoration:underline;
+    text-decoration-color: rgb(59, 13, 165);
+    font-family: 'Estonia', cursive;
+}
+/*utility class*/
+.btn{
+    font-size: 2rem;
+    padding: 6px 20px;
+    border: 5px solid red;
+    background-color: white;
+    color:blueviolet;
+    display: block;
+    margin: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: aquablue;
+    background-color: rgb(0, 217, 255);
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    text-decoration:underline;
+    text-decoration-color: rgb(59, 13, 165);
+}
+.h-secondary{
+    font-size: 3rem;
+    padding: 2px;
+    margin-left: 50px;
+}
+/*services*/
+#services{
+    margin: 45px;
+    display: flex;
+}
+#services .box{
+    border: 7px solid rgba(19, 1, 1, 0.952);
+    border-radius: 50px;
+}
+#services .box img{
+    height: 400px;
+    width:450px;
+    margin:20px;
+    padding:20px;
+    display:inline-block block; 
+    align-items:center;  
+}
+#services p{
+    font-size:1.2rem;
+    text-align:center
+}
+/*clients section*/
+.client::before{
+    display: flex;
+    display: relative;
+}
+#clients{
+    margin: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 70px;
+    margin: 30px;
+    height: 50px;
+}
+/*Contact us*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 480px;
+    background: url('../shop3.jpg') no-repeat center center/cover;
+    z-index:-1;
+    opacity: 0.8;
+}
+#contact h1{
+    height: 50px;
+    margin: 15rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 14px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: antiquewhite;
+    text-align:center;
+}
+body{
+    background-color:rgb(230, 191, 125);
+}
+
